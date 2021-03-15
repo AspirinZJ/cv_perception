@@ -1,0 +1,19 @@
+{
+    "current_camera" : "B601B",
+
+    "camera_record_res" : [1920, 1080],
+    "display_ratio":1,
+
+    "dump_path" : "/home/jackzhang/dump_data",
+
+    "camera_dump_raw":1,
+    "camera_dump_raw_width":1920,
+    "camera_dump_raw_height":1080,
+
+    "camera_dump_pano": 1,
+    "camera_dump_pano_width":1586,
+    "camera_dump_pano_height":734,
+
+    "imu_dump" : 0,
+    "gps_dump" : 0
+}

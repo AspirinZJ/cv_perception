@@ -1,0 +1,7 @@
+<launch>
+    <!--    <node name="gps_collector" pkg="data_collector" type="gps" output="screen"/>-->
+
+    <!--    <node name="imu_collector" pkg="data_collector" type="imu" output="screen"/>-->
+
+    <node name="image_collector" pkg="data_collector" type="image" output="screen"/>
+</launch>

@@ -1,0 +1,16 @@
+<launch>
+    <include file="$(find imu_launch)/launch/imu_rviz.launch"> 
+    </include>
+
+    <include file="$(find turn_on_wheeltec_robot)/launch/turn_on_wheeltec_robot.launch">
+    </include>
+
+    <include file="$(find lfi_launch)/launch/camera.launch">
+    </include>
+
+    <include file="$(find lfi_launch)/launch/gps.launch">
+    </include>
+
+    <include file="$(find data_collector)/launch/dumpper.launch">
+    </include>
+</launch>

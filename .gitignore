@@ -1,0 +1,9 @@
+/.project
+/devel/
+/build/
+/.vscode/
+/.catkin_workspace
+/.ycm_extra_conf.py
+/.ycm_extra_conf.pyc
+src/ublox
+**/cmake-build-debug/**

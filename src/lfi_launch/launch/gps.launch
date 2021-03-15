@@ -1,0 +1,11 @@
+<launch>
+    <node name="rtcm" pkg="rtcm" type="str2str" output="screen" >
+        <param name="in" value="ntrip://qxutqa001:679e5d3@rtk.ntrip.qxwz.com:8001/RTCM32_GGB" />
+        <param name="out" value="serial://ttyUSB1:115200:8:n:1:off" />
+        <param name="p" value="31.93095 118.79943 19.6" />
+        <param name="n" value="1" />
+    </node>
+
+    <include file="$(find ublox_gps)/launch/ublox_zed-f9p.launch"> 
+    </include>
+</launch>

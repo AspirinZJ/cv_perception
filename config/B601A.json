@@ -1,0 +1,16 @@
+[
+    {
+        "calibrated_date":"Jan 26, 2020",
+        "camera_name":"B601A",
+        "manufacture_date":"Jan 10, 2020",
+        "vendor":"All-Seeing Eye Technology"
+    },
+    {
+        "bottom_cutoff":1.25,
+        "center_x":1920,
+        "center_y":1062,
+        "distance":843,
+        "raw_resolution":[3840,2160],
+        "top_cutoff":20
+    }
+]
