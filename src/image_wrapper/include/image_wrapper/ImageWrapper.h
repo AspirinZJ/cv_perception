@@ -11,15 +11,24 @@ public:
 
 private:
 	cv::Mat srcImage; /**< TODO: describe */
-    cv::Mat dstImage; /**< TODO: describe */
-    cv::Mat reSizeImage; /**< TODO: describe */
+	cv::Mat dstImage; /**< TODO: describe */
+	cv::Mat reSizeImage; /**< TODO: describe */
 
-    unsigned orginalImageCols, orginalImageRows, /**< TODO: describe */
-                unwarpImageCols, unwarpImageRows; /**< TODO: describe */
-    unsigned displayedHeight = 831, displayedWidth = 1591;
+	unsigned orginalImageCols, orginalImageRows, /**< TODO: describe */
+	unwarpImageCols, unwarpImageRows; /**< TODO: describe */
+	unsigned displayedHeight = 831, displayedWidth = 1591;
 
-    double *trho = NULL; /**< TODO: describe */
-    double u0, v0; /**< TODO: describe */
+	double *trho = nullptr; /**< TODO: describe */
+	double u0, v0; /**< TODO: describe */
 
-    double *theta_acc = NULL;
+	/**
+	 * @brief table for looking up the pixel indices: srcImage --> dstImage
+	 * @details 2D int array
+	 * size: [unWarpImageCols][2 x unWarpImagesRows].
+	 * *(*(this->indTable + x) + 2 * y) --> xVal;
+	 * *(*(this->indTable + x) + 2 * y + 1) --> yVal;
+	 */
+	short **indTable;
+
+	double *theta_acc = nullptr;
 };

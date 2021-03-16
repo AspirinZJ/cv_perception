@@ -4,9 +4,10 @@
         <param name="pixel_format" value="mjpeg"/>
         <param name="camera_frame_id" value="usb_cam"/>
         <param name="io_method" value="mmap"/>
-        <param name="framerate" value="30"/>
     </node>
 
     <!--    <node name="web_video_server" pkg="web_video_server" type="web_video_server" output="screen"/>-->
     <node name="publish_topic" pkg="image_wrapper" type="publish_topic" output="screen"/>
+
+    <!--    <node pkg="image_wrapper" type="display_image" name="image_wrapper" output="screen"/>-->
 </launch>

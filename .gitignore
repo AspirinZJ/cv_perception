@@ -7,3 +7,4 @@
 /.ycm_extra_conf.pyc
 src/ublox
 **/cmake-build-debug/**
+**/.idea/*
